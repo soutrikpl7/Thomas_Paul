@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Akkling</id>
+    <version>0.10.0</version>
+    <authors>Bartosz Sypytkowski</authors>
+    <owners>Bartosz Sypytkowski</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Horusiath/Akkling/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Horusiath/Akkling</projectUrl>
+    <description>Library used for working with Akka.NET using F# in type safe manner with functional principles in mind</description>
+    <releaseNotes>* Upgraded Akka.NET dependencies to 1.4.2
+      * Consolidated supported .NET version to .NET Standard 2.0
+      * Removed PersistentView (as its no longer supported)
+      * Akkling.Streams: added support to stream refs, observables, cancellation tokens and withContext variants.
+      * Akkling.Streams: switched tuple args to value tuples to match Akka.Streams API.</releaseNotes>
+    <copyright>Bartosz Sypytkowski</copyright>
+    <tags>akka.net fsharp</tags>
+    <repository url="https://github.com/Horusiath/Akkling" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Akka" version="1.4.2" exclude="Build,Analyzers" />
+        <dependency id="Akka.Serialization.Hyperion" version="1.4.2" exclude="Build,Analyzers" />
+        <dependency id="FSharp.Core" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

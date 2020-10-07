@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FsPickler</id>
+    <version>5.3.2</version>
+    <authors>Eirik Tsarpalis</authors>
+    <owners>Eirik Tsarpalis</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>http://mbraceproject.github.io/FsPickler/</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/9674757</iconUrl>
+    <description>FsPickler is a serialization library that facilitates the distribution of .NET objects.
+The implementation focuses on performance and completeness in supported types, including F# types.
+It supports multiple, pluggable serialization formats including Binary, Xml, JSON and BSON.
+The library is based on the functional programming concept of pickler combinators which
+has been adapted to accommodate the object oriented nature of the .NET framework.</description>
+    <releaseNotes>Use AssemblyLoadContext when loading assemblies.</releaseNotes>
+    <copyright>2019</copyright>
+    <tags>F#, fsharp, serializer, pickler, binary, json, xml</tags>
+    <repository type="git" url="https://github.com/mbraceproject/FsPickler" commit="3aae1764238085afbb50b08c7a75f4577be178ca" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="FSharp.Core" version="4.3.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.3.2" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

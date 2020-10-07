@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>DotNetty.Buffers</id>
+    <version>0.6.0</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Azure/DotNetty/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/Azure/DotNetty/</projectUrl>
+    <description>Buffer management in DotNetty</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>socket tcp protocol netty dotnetty network</tags>
+    <serviceable>true</serviceable>
+    <repository url="https://github.com/Azure/DotNetty/" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="DotNetty.Common" version="0.6.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="4.5.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="DotNetty.Common" version="0.6.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Contracts" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="4.5.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
