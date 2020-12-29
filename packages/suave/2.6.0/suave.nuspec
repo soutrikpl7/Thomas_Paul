@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Suave</id>
+    <version>2.6.0</version>
+    <title>Suave</title>
+    <authors>Ademar Gonzalez</authors>
+    <owners>Ademar Gonzalez</owners>
+    <licenseUrl>https://github.com/SuaveIO/Suave/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://suave.io</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/SuaveIO/resources/master/images/head_trans.png</iconUrl>
+    <description>Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.</description>
+    <releaseNotes>Introduces proxy web part
+Optimization: use byte arrays instead of strings for hardcoded literals
+FIX: Sequence map bug in getHeaders (#747)</releaseNotes>
+    <dependencies>
+      <group targetFramework="netstandard2.1">
+        <dependency id="FSharp.Core" version="0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
